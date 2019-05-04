@@ -1,8 +1,16 @@
 <template>
   <div class="header">
-    <div class="header-left">返回</div>
-    <div class="header-center">输入城市/景点/游玩主题</div>
-    <div class="header-right">城市</div>
+    <div class="header-left">
+      <span class="iconfont back-icon">&#xe6f5;</span>
+    </div>
+    <div class="header-center">
+      <span class="iconfont">&#xe705;</span>
+      输入城市/景点/游玩主题
+    </div>
+    <div class="header-right">
+      城市
+      <span class="iconfont">&#xe625;</span>
+    </div>
   </div>
 </template>
 <script>
@@ -11,14 +19,18 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+  @import "~styles/varibles.styl"
   .header
     display flex
     line-height .86rem
-    background-color #00bcd4
+    background-color $bgColor
     color #ffffff
     .header-left
       width .64rem
       float left
+      text-align center
+      .back-icon
+        font-size .4rem
     .header-center
       flex 1
       height .64rem
@@ -27,6 +39,7 @@ export default {
       border-radius .1rem
       margin-top .12rem
       margin-left .12rem
+      padding-left .2rem
       color #ccc
     .header-right
       width 1.24rem
