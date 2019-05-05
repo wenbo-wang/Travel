@@ -103,11 +103,11 @@ export default {
   .hot-list
     overflow-x auto
     white-space nowrap;
-    padding 0 .24rem
+    padding 0 .14rem 0 .24rem
     .hot-list-item
       display: inline-block
       width 2rem
-      margin-left .1rem
+      margin-right .1rem
       margin-bottom .2rem
       .hot-list-item-full
         width 100%
