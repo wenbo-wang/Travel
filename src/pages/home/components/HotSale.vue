@@ -9,7 +9,118 @@
       </div>
     </div>
     <ul class="hot-list">
-      <li class="hot-list-item">ceshi</li>
+      <li class="hot-list-item">
+        <div class="hot-list-item-full">
+          <div class="item-full-tag">
+            <img class="item-full-tag-img" src="http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png">
+          </div>
+          <div class="item-full-img">
+            <img class="full-img-icon" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg">
+          </div>
+          <div class="item-full-desc">故宫</div>
+          <div class="item-full-price">
+            ￥
+            <em class="price-num">60</em>
+            起
+          </div>
+        </div>
+      </li>
+      <li class="hot-list-item">
+        <div class="hot-list-item-full">
+          <div class="item-full-tag">
+            <img class="item-full-tag-img" src="http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png">
+          </div>
+          <div class="item-full-img">
+            <img class="full-img-icon" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg">
+          </div>
+          <div class="item-full-desc">故宫</div>
+          <div class="item-full-price">
+            ￥
+            <em class="price-num">60</em>
+            起
+          </div>
+        </div>
+      </li>
+      <li class="hot-list-item">
+        <div class="hot-list-item-full">
+          <div class="item-full-tag">
+            <img class="item-full-tag-img" src="http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png">
+          </div>
+          <div class="item-full-img">
+            <img class="full-img-icon" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg">
+          </div>
+          <div class="item-full-desc">故宫</div>
+          <div class="item-full-price">
+            ￥
+            <em class="price-num">60</em>
+            起
+          </div>
+        </div>
+      </li>
+      <li class="hot-list-item">
+        <div class="hot-list-item-full">
+          <div class="item-full-tag">
+            <img class="item-full-tag-img" src="http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png">
+          </div>
+          <div class="item-full-img">
+            <img class="full-img-icon" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg">
+          </div>
+          <div class="item-full-desc">故宫</div>
+          <div class="item-full-price">
+            ￥
+            <em class="price-num">60</em>
+            起
+          </div>
+        </div>
+      </li>
+      <li class="hot-list-item">
+        <div class="hot-list-item-full">
+          <div class="item-full-tag">
+            <img class="item-full-tag-img" src="http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png">
+          </div>
+          <div class="item-full-img">
+            <img class="full-img-icon" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg">
+          </div>
+          <div class="item-full-desc">故宫</div>
+          <div class="item-full-price">
+            ￥
+            <em class="price-num">60</em>
+            起
+          </div>
+        </div>
+      </li>
+      <li class="hot-list-item">
+        <div class="hot-list-item-full">
+          <div class="item-full-tag">
+            <img class="item-full-tag-img" src="http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png">
+          </div>
+          <div class="item-full-img">
+            <img class="full-img-icon" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg">
+          </div>
+          <div class="item-full-desc">故宫</div>
+          <div class="item-full-price">
+            ￥
+            <em class="price-num">60</em>
+            起
+          </div>
+        </div>
+      </li>
+      <li class="hot-list-item">
+        <div class="hot-list-item-full">
+          <div class="item-full-tag">
+            <img class="item-full-tag-img" src="http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png">
+          </div>
+          <div class="item-full-img">
+            <img class="full-img-icon" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg">
+          </div>
+          <div class="item-full-desc">故宫</div>
+          <div class="item-full-price">
+            ￥
+            <em class="price-num">60</em>
+            起
+          </div>
+        </div>
+      </li>
     </ul>
   </div>
 </template>
@@ -19,31 +130,64 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
-  .hot
-    height  3.6rem
-    .hot-title
-      position relative
+  .hot-title
+    position relative
+    height .44rem
+    padding .24rem 0 .26rem
+    .hot-title-img
+      float left
+      display block
+      width .3rem
+      height .3rem
+      margin-left .2rem
+    .hot-title-desc
+      float left
+      font-size .32rem
       height .44rem
-      padding .24rem 0 .26rem
-      .hot-title-img
-        float left
-        display block
-        width .3rem
-        height .3rem
-        margin-left .2rem
-      .hot-title-desc
-        float left
-        font-size .32rem
-        height .44rem
-        line-height .44rem
-        margin-left .08rem
-        color: #212121
-      .hot-title-all
-        float right
-    .hot-list
-      overflow-x scroll
-      padding 0 .24rem
-      .hot-list-item
-        float left
-        width 2rem
+      line-height .44rem
+      margin-left .08rem
+      color: #212121
+    .hot-title-all
+      float right
+  .hot-list
+    overflow-x auto
+    white-space nowrap;
+    padding 0 .24rem
+    .hot-list-item
+      display: inline-block
+      width 2rem
+      margin-bottom .2rem
+      .hot-list-item-full
+        width 100%
+        height 100%
+        position relative
+        .item-full-tag
+          position absolute
+          top 0
+          left 0
+          width .84rem
+          height .4rem
+          .item-full-tag-img
+            width 100%
+        .item-full-img
+          overflow hidden
+          width 2rem
+          height 0
+          padding-bottom 100%
+          .full-img-icon
+            width 100%
+        .item-full-desc
+          margin-top .12rem
+          height .32rem
+          line-height .32rem
+          text-align center
+          color #212121
+        .item-full-price
+          height .36rem
+          color #616161
+          margin-top .1rem
+          text-align center
+          .price-num
+            color #ff8300
+            font-size .28rem
 </style>
