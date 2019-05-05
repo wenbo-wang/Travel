@@ -78,6 +78,7 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+  @import "~styles/mixins.styl"
   .icons
     padding-top .1rem
   .icons >>> .swiper-container
@@ -104,4 +105,5 @@ export default {
       margin-top .1rem
       text-align center
       font-size .28rem
+      ellipsis()
 </style>
