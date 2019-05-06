@@ -5,7 +5,7 @@
       <span class="like-title-desc">猜你喜欢</span>
     </div>
     <ul class="like-list">
-      <li class="like-item border-bottom" v-for="item of likeList" :key="item.id">
+      <li class="like-item" v-for="item of likeList" :key="item.id">
         <div class="like-item-tag">
           {{item.tag}}
         </div>
