@@ -20,7 +20,7 @@ export default {
     .back-icon
       position absolute
       top 0
-      left 0
+      left .1rem
       font-size .4rem
       color #ffffff
     .header-title
