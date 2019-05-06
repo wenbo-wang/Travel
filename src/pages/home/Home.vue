@@ -1,11 +1,11 @@
 <template>
   <div>
-    <home-header></home-header>
-    <home-swiper></home-swiper>
-    <home-icons></home-icons>
-    <home-hot-sale></home-hot-sale>
-    <home-like></home-like>
-    <home-weekend></home-weekend>
+    <home-header :city="city"></home-header>
+    <home-swiper :swiperList="swiperList"></home-swiper>
+    <home-icons :iconList="iconList"></home-icons>
+    <home-hot-sale :hotList="hotList"></home-hot-sale>
+    <home-like :likeList="likeList"></home-like>
+    <home-weekend :weekendList="weekendList"></home-weekend>
   </div>
 </template>
 <script>
@@ -26,13 +26,32 @@ export default {
     HomeLike,
     HomeWeekend
   },
+  data () {
+    return {
+      city: '',
+      swiperList: [],
+      iconList: [],
+      hotList: [],
+      likeList: [],
+      weekendList: []
+    }
+  },
   methods: {
     getHomeInfo () {
       axios.get('/api/index.json')
         .then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
-      console.log(res)
+      res = res.data
+      if (res.ret && res.data) {
+        const data = res.data
+        this.city = data.city
+        this.swiperList = data.swiperList
+        this.iconList = data.iconList
+        this.hotList = data.hotList
+        this.likeList = data.likeList
+        this.weekendList = data.weekendList
+      }
     }
   },
   mounted () {

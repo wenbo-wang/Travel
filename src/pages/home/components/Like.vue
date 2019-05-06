@@ -34,39 +34,17 @@
 <script>
 export default {
   name: 'HomeLike',
+  props: {
+    likeList: Array
+  },
   data () {
     return {
-      likeList: [{
-        id: '0001',
-        tag: '可订明日',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        title: '故宫',
-        price: '60',
-        location: '北京',
-        comment: '45',
-        desc: '世界五大宫之首'
-      }, {
-        id: '0002',
-        tag: '预约',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        title: '长城',
-        price: '20',
-        location: '北京',
-        comment: '48'
-      }, {
-        id: '0003',
-        tag: '极速入场',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        title: '护城河',
-        price: '50',
-        location: '西安',
-        comment: '50'
-      }]
     }
   }
 }
 </script>
 <style lang="stylus" scoped>
+  @import "~styles/mixins.styl"
   .like-title
     position relative
     height .44rem
@@ -139,4 +117,5 @@ export default {
           line-height .34rem
           color #f55
           background-color #fff9f9
+          ellipsis()
 </style>

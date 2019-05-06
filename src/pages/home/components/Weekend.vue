@@ -7,7 +7,7 @@
           <img class="item-img-icon" :src="item.imgUrl">
         </div>
         <div class="weekend-item-content">
-          <p class="item-content-name">{{item.name}}</p>
+          <p class="item-content-name">{{item.title}}</p>
           <p class="item-content-desc">{{item.desc}}</p>
         </div>
       </div>
@@ -17,24 +17,11 @@
 <script>
 export default {
   name: 'HomeWeekend',
+  props: {
+    weekendList: Array
+  },
   data () {
     return {
-      weekendList: [{
-        id: '0001',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1603/6d/2f67ae0659f41f.jpg_r_640x214_bf6cbd0b.jpg',
-        name: '北京赏花好地方',
-        desc: '乱花渐欲迷人眼，京城赏花大搜索'
-      }, {
-        id: '0002',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1603/6d/2f67ae0659f41f.jpg_r_640x214_bf6cbd0b.jpg',
-        name: '北京赏花好地方',
-        desc: '乱花渐欲迷人眼，京城赏花大搜索'
-      }, {
-        id: '0003',
-        imgUrl: 'http://img1.qunarzz.com/sight/source/1603/6d/2f67ae0659f41f.jpg_r_640x214_bf6cbd0b.jpg',
-        name: '北京赏花好地方',
-        desc: '乱花渐欲迷人眼，京城赏花大搜索'
-      }]
     }
   }
 }

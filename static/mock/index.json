@@ -1,6 +1,7 @@
 {
   "ret": true,
   "data": {
+    "city": "北京",
     "swiperList": [{
         "id": "0001",
         "imgUrl": "http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg"
@@ -51,31 +52,51 @@
         "imgUrl": "http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png",
         "desc": "一日游"
       }],
-    "recommendList": [{
+    "likeList": [{
         "id": "0001",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
         "title": "故宫",
-        "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
-      }, {
+        "desc": "东方宫殿建筑代表，世界宫殿建筑典范",
+        "tag": "随时使用",
+        "price": "70",
+        "location": "朝阳区",
+        "comment": "45"
+    }, {
         "id": "0002",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
         "title": "南山滑雪场",
-        "desc": "北京专业级滑雪圣地"
+        "desc": "北京专业级滑雪圣地",
+        "tag": "随时使用",
+        "price": "100",
+        "location": "顺义区",
+        "comment": "55"
       }, {
         "id": "0003",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
         "title": "天安门广场",
-        "desc": "我爱北京天安门，天安门上太阳升"
+        "desc": "我爱北京天安门，天安门上太阳升",
+        "tag": "预约使用",
+        "price": "50",
+        "location": "东城区",
+        "comment": "85"
       }, {
         "id": "0004",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
         "title": "水立方",
-        "desc": "中国的荣耀，阳光下的晶莹水滴"
+        "desc": "中国的荣耀，阳光下的晶莹水滴",
+        "tag": "随时使用",
+        "price": "70",
+        "location": "大兴区",
+        "comment": "45"
       }, {
         "id": "0005",
         "imgUrl": "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
         "title": "温都水城养生馆",
-        "desc": "各种亚热带植物掩映其间仿佛置身热带雨林"
+        "desc": "各种亚热带植物掩映其间仿佛置身热带雨林",
+        "tag": "预约使用",
+        "price": "78",
+        "location": "朝阳区",
+        "comment": "49"
       }],
     "weekendList": [{
         "id": "0001",
@@ -102,6 +123,37 @@
         "imgUrl": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
         "title": "儿童剧场，孩子的乐园",
         "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
-      }]
+      }],
+    "hotList": [{
+        "id": "0001",
+        "tagUrl": "http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png",
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg",
+        "desc": "故宫",
+        "price": "60"
+    }, {
+      "id": "0002",
+      "tagUrl": "http://img1.qunarzz.com/piao/fusion/1710/2d/36d0c4adaebbbc02.png",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_250x250_d852635b.jpg",
+      "desc": "颐和园",
+      "price": "30"
+    }, {
+      "id": "0003",
+      "tagUrl": "http://img1.qunarzz.com/piao/fusion/1710/67/edc47ffef9e96b02.png",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/201403/24/92759d9d52af059a7849f482f10358c5.jpg_250x250_bb4897b4.jpg",
+      "desc": "平谷桃花海",
+      "price": "33"
+    }, {
+      "id": "0004",
+      "tagUrl": "",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1708/2b/2b3b94de99c0a425a3.img.jpg_250x250_50c99cf3.jpg",
+      "desc": "八达岭长城",
+      "price": "120"
+    }, {
+      "id": "0005",
+      "tagUrl": "",
+      "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg",
+      "desc": "恭王府",
+      "price": "62"
+    }]
   }
 }
