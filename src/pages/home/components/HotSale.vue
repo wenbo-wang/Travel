@@ -11,7 +11,7 @@
     <ul class="hot-list">
       <li class="hot-list-item" v-for="item of hotList" :key="item.id">
         <div class="hot-list-item-full">
-          <div class="item-full-tag">
+          <div class="item-full-tag" v-if="item.tagUrl">
             <img class="item-full-tag-img" :src="item.tagUrl">
           </div>
           <div class="item-full-img">
@@ -19,8 +19,10 @@
           </div>
           <div class="item-full-desc">{{item.desc}}</div>
           <div class="item-full-price">
-            ￥
-            <em class="price-num">{{item.price}}</em>
+            <span class="price-tag">
+              ￥
+              <em class="price-num">{{item.price}}</em>
+            </span>
             起
           </div>
         </div>
@@ -31,51 +33,11 @@
 <script>
 export default {
   name: 'HomeHotSale',
+  props: {
+    hotList: Array
+  },
   data () {
     return {
-      hotList: [{
-        id: '0001',
-        tagUrl: 'http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        desc: '故宫',
-        price: '60'
-      }, {
-        id: '0002',
-        tagUrl: 'http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        desc: '长城',
-        price: '70'
-      }, {
-        id: '0003',
-        tagUrl: 'http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        desc: '长城',
-        price: '80'
-      }, {
-        id: '0004',
-        tagUrl: 'http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        desc: '长城',
-        price: '90'
-      }, {
-        id: '0005',
-        tagUrl: 'http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        desc: '长城',
-        price: '100'
-      }, {
-        id: '0006',
-        tagUrl: 'http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        desc: '长城',
-        price: '110'
-      }, {
-        id: '0007',
-        tagUrl: 'http://img1.qunarzz.com/piao/fusion/1710/ab/159673b63e6ca702.png',
-        imgUrl: 'http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_250x250_0fc722c0.jpg',
-        desc: '长城',
-        price: '120'
-      }]
     }
   }
 }
@@ -139,7 +101,8 @@ export default {
           color #616161
           margin-top .1rem
           text-align center
-          .price-num
+          .price-tag
             color #ff8300
-            font-size .28rem
+            .price-num
+              font-size .28rem
 </style>
